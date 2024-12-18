@@ -13,7 +13,7 @@ body {
     padding: 20px;
   }
   
-  form {
+  //form {
     display: flex;
     flex-direction: column;
     max-width: 300px;
@@ -92,27 +92,6 @@ body {
     background-color: #575757;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    padding: 10px;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .search-container {
     display: flex;
     align-items: center;
@@ -137,4 +116,155 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+  line-height: 1.6;
+}
+
+.profile-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cover photo */
+.cover-photo {
+  width: 100%;
+  height: 300px;
+  background-color: #e9ebee;
+  overflow: hidden;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile photo and details */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.profile-photo-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  border: 5px solid white;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.profile-details .bio {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.edit-btn {
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.edit-btn:hover {
+  background-color: #155cb3;
+}
+
+/* Navigation links */
+.nav-links ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #1877f2;
+  font-size: 1.2em;
+}
+
+.nav-links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Posts section */
+.posts {
+  margin-top: 40px;
+}
+
+.posts h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.post {
+  background-color: #f5f6f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.post p {
+  font-size: 1.1em;
+}
+
+.post button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.post button:hover {
+  background-color: #155cb3;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
 }

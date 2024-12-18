@@ -12,43 +12,82 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="./css/profile.css">
+  <script src="profile.js"></script>
+
 </head>
 <body>
-  <header>
-
     <nav class="navbar">
-        <div class="logo">Fixso</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html">Sign-Up</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Services</a>
-                <div class="dropdown-content">
-                    <a href="profile.html">Profile</a>
-                    <a href="messages.html">Messages</a>
-                    <a href="login.html">Login</a>
-                </div>
-            </li>
-        </ul>
-        <div class="search-container">
-            <input type="text" placeholder="Search..." id="search-bar">
-            <button type="submit">Search</button>
-        </div>
-    </nav>
+      <div class="logo">Gess</div>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign-Up</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="messages.html">Messages</a></li>
+          <li><a href="new.html">New Messages</a></li>
 
-</header>
-<main>
-    <h1>Your Profile</h1>
-    <button id="logoutBtn">Logout</button>
-    <a href="posts.html">All Posts</a>
-    <form id="createPostForm">
-        <label for="postContent">What's on your mind?</label>
-        <textarea id="postContent" required></textarea>
-        <button type="submit">Post</button>
-    </form>
-  </main>
+      </div>
+      </ul>
+      <div class="search-container">
+          <input type="text" placeholder="Search..." id="search-bar">
+          <button type="submit">Search</button>
+      </div>
+  </nav>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Facebook Profile</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div class="profile-container">
+          <!-- Cover photo and profile header -->
+          <div class="cover-photo">
+              <img src="images/computer-4484282_1280.jpg" alt="Cover Photo">
+          </div>
+          
+          <div class="profile-header">
+              <div class="profile-photo-container">
+                  <img src="images/profile picture.png" alt="Your Name" class="profile-photo">
+              </div>
+              <div class="profile-details">
+                  <h1>Diamond Layweh</h1> <br><br>
+                  <p class="bio">Hi friend, I'm glad you made it to my page. Feel free to slide into my DM for a collaboration.</p>
+                  <button class="edit-btn">Edit Profile</button>
+              </div>
+          </div>
+  
+          <!-- Navigation links -->
+          <div class="nav-links">
+              <ul>
+                  <li><a href="messages.html">Posts</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Friends</a></li>
+                  <li><a href="#">Photos</a></li>
+              </ul>
+          </div>
+  
+          <!-- Posts section -->
+          <div class="posts">
+              <h2>Posts</h2>
+              <div class="post">
+                  <p><strong>Your Name</strong></p>
+                  <p>This is a sample post! You can write about your day, share news, or post photos.</p>
+                  <button>Like</button>
+                  <button>Comment</button>
+              </div>
+          </div>
 
-  <script src="profile.js"></script>
+  
+          <!-- Footer -->
+          <div class="footer">
+              <p>Gess | &copy; 2024</p>
+          </div>
+      </div>
+  
+  
+
 </body>
 </html>

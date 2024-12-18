@@ -44,26 +44,6 @@ body {
     background-color: #575757;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    padding: 10px;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .search-container {
     display: flex;
@@ -83,10 +63,26 @@ button {
     color: white;
     border: none;
     border-radius: 4px;
-    margin-left: 10px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #45a049;
 }
+
+main {
+    padding: 50px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  label, input, button {
+    margin-bottom: 10px;
+  }
+  
+  

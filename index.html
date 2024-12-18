@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Floating Background Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -11,29 +11,47 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="./css/login.css">
-    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/new.css">
+
 </head>
 <body>
     <nav class="navbar">
-    <div class="logo">Fixso</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign-Up</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropbtn">Services</a>
-            <div class="dropdown-content">
-                <a href="profile.html">Profile</a>
-                <a href="messages.html">Messages</a>
-                <a href="login.html">Login</a>
-            </div>
-        </li>
-    </ul>
-    <div class="search-container">
-        <input type="text" placeholder="Search..." id="search-bar">
-        <button type="submit">Search</button>
+        <div class="logo">Gess</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign-Up</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="new.html">New Messages</a></li>
+
+        </div>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." id="search-bar">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+    <!-- Floating background image -->
+    <div class="background"></div>
+
+    <!-- Blog content -->
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to My Blog</h1>
+            <p>
+                <b> is the introductory paragraph of the blog. You can write about anything you want here. 
+                The background image stays fixed while you scroll through the content. The text is displayed over the image.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia ante urna, sed volutpat nunc gravida nec. 
+                Integer viverra ultricies elit, nec rhoncus nulla vehicula id. Nulla facilisi.
+            </p>
+        </div>
     </div>
-</nav>
+    <main>
+        <p>Have an account? <a href="login.html">Login</a></p>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+      </main>
 </body>
 </html>
