@@ -44,27 +44,6 @@ body {
     background-color: #575757;
 }
 
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    padding: 10px;
-    text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .search-container {
     display: flex;
     align-items: center;

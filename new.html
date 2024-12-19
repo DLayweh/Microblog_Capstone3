@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Text</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/new.css">
 
     <script src="./js/main.js"></script>
     <script src="./js/new.js"></script>
@@ -19,14 +19,15 @@
             <li><a href="profile.html">Profile</a></li>
             <li><a href="messages.html">Messages</a></li>
             <li><a href="new.html">New Messages</a></li>
-
-        </div>
         </ul>
         <div class="search-container">
             <input type="text" placeholder="Search..." id="search-bar">
-            <button type="submit">Search</button>
+            <button type="submit" id="searchButton">Search</button>
         </div>
     </nav>
-    <input id="textInput"><button id="sendTextButton">Send Text</button>
+    <div class="container" id="textContainer">
+        <input id="textInput" type="text" placeholder="Enter your text here">
+        <button id="sendTextButton">Send Text</button>
+    </div>
 </body>
 </html>

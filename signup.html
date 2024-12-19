@@ -11,7 +11,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/signup.css">
     <script src="./js/main.js"></script>
     <script src="./js/signup.js"></script>
 </head>
@@ -32,16 +32,18 @@
             </ul>
             <div class="search-container">
                 <input type="text" placeholder="Search..." id="search-bar">
-                <button type="submit">Search</button>
+                <button type="submit" id="searchButton">Search</button>
             </div>
         </nav>
     </header>
-    <main class="label">
-        <label><span>Username/Email</span><input id="username" type="email"></label>
-        <label><span>Full Name</span><input id="fullName"></label>
-        <label><span>Password</span><input id="password" type="password"></label>
-        <button id="signUpButton">Sign-Up</button>
-        <div id="output">?</div>
-    </main>
+    <div class="signup-wrapper">
+        <main>
+            <label><span>Username/Email</span><input id="username" type="email"></label>
+            <label><span>Full Name</span><input id="fullName"></label>
+            <label><span>Password</span><input id="password" type="password"></label>
+            <button id="signUpButton">Sign-Up</button>
+            <div id="output">?</div>
+        </main>
+    </div>
 </body>
 </html>

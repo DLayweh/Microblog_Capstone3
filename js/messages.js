@@ -1,32 +1,65 @@
-/*
-{
-    "_id": "675c852615fee0925c8d2e52",
-    "text": "First Post",
-    "username": "GurjotS",
-    "createdAt": "2024-12-13T19:04:06.252Z",
-    "likes": [
-      {
-        "_id": "675c8a3715fee0925c8d2e9e",
-        "postId": "675c852615fee0925c8d2e52",
-        "username": "buttercupx",
-        "createdAt": "2024-12-13T19:25:43.034Z"
-      }
-    ]
-  },
-*/
-function getMessage(m) {
-    return `
-        <div data-post_id="${m._id}" class="message">
-            FROM:  ${m.username}<br>\n    
-            WHEN:  ${m.createdAt}<br>\n    
-            TEXT:  ${m.text}<br>\n
-            LIKES: ${m.likes.length}
-        </div>
-    `;
-}
 document.addEventListener("DOMContentLoaded", async () => {
+  // Redirect if not logged in
+  if (!localStorage.token) {
+      window.location.href = "login.html";
+      return;
+  }
 
-    const messages = await getMessageList();
-    output.innerHTML = messages.map(getMessage).join("<hr>\n")
+  const messages = await getMessageList();
+  const output = document.getElementById("output");
 
-});//end load
+  if (messages.length === 0) {
+      output.innerHTML = "<p>No messages available.</p>";
+      return;
+  }
+
+  output.innerHTML = messages.map(getMessage).join("");
+
+  // Initialize like/dislike functionality
+  initializeLikeButtons();
+});
+
+// Render message
+function getMessage(m) {
+  const likes = JSON.parse(localStorage.getItem("likes")) || {};
+  const likeCount = likes[m._id] || m.likes.length;
+
+  return `
+      <div class="message" data-post_id="${m._id}">
+          <p><strong>${m.username}</strong> - ${new Date(m.createdAt).toLocaleString()}</p>
+          <p>${m.text}</p>
+          <p>Likes: <span id="likes-${m._id}">${likeCount}</span></p>
+          <button class="like" data-post_id="${m._id}">Like</button>
+          <button class="dislike" data-post_id="${m._id}">Dislike</button>
+      </div>
+  `;
+}
+
+// Initialize like buttons
+function initializeLikeButtons() {
+  document.querySelectorAll(".like").forEach((button) => {
+      button.addEventListener("click", () => {
+          const postId = button.dataset.post_id;
+          updateLike(postId, 1);
+      });
+  });
+
+  document.querySelectorAll(".dislike").forEach((button) => {
+      button.addEventListener("click", () => {
+          const postId = button.dataset.post_id;
+          updateLike(postId, -1);
+      });
+  });
+}
+
+// Update likes
+function updateLike(postId, delta) {
+  const likes = JSON.parse(localStorage.getItem("likes")) || {};
+  const currentLikes = likes[postId] || 0;
+
+  const newLikes = Math.max(0, currentLikes + delta);
+  likes[postId] = newLikes;
+
+  localStorage.setItem("likes", JSON.stringify(likes));
+  document.getElementById(`likes-${postId}`).textContent = newLikes;
+}
