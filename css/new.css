@@ -17,6 +17,7 @@ body {
     padding: 10px 20px;
 }
 
+
 .navbar .logo {
     color: white;
     font-size: 24px;
@@ -126,3 +127,35 @@ body, html {
 #sendTextButton:hover {
     background-color: #8495a7;
 }
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 1px 1px;
+  }
+  .fa-facebook {
+    background: #363f3a;
+    color: white;
+  }
+  .fa-instagram {
+    background: #353936;
+    color: white;
+  }
+  .fa-twitter {
+    background: #242d29;
+    color: white;
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2019/03/22/19/32/table-4074014_1280.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }

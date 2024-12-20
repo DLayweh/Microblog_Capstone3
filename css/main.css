@@ -66,6 +66,13 @@ button {
     cursor: pointer;
 }
 
+
 button:hover {
     background-color: #45a049;
+}
+.icons {   /*this class is for the buttons on line 34 & 35*/
+    width: 10px;   /* this adjust the size of the icon*/
+    padding-right: 8px; /*this moves it away from the words*/
+    padding-bottom: 3px;
+    
 }

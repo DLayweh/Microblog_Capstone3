@@ -75,6 +75,7 @@ body {
 .profile-container {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 20px; /*space btw navbar */
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -84,12 +85,14 @@ body {
 /* Cover Photo */
 .cover-photo {
   position: relative;
+  margin-top: -21px;
 }
 
 .cover-photo img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
+  margin-top: 20px;
 }
 
 .cover-photo button {
@@ -117,11 +120,12 @@ body {
 .profile-photo-container {
   position: relative;
   display: inline-block;
+  height: 10px;
 }
 
 .profile-photo-container img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 127px;
   border-radius: 50%;
   border: 3px solid #fff;
 }
@@ -131,7 +135,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 6px 10px;
+  padding: 10px 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -146,7 +150,8 @@ body {
 
 /* Profile Form */
 .profile-form {
-  padding: 20px;
+  padding: 10px;
+  margin-top: 30px;
 }
 
 .profile-form label {
@@ -160,7 +165,7 @@ body {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .profile-form textarea {
@@ -168,7 +173,7 @@ body {
 }
 
 .profile-form button {
-  padding: 10px 20px;
+  padding: 20px 50px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -180,4 +185,37 @@ body {
   background-color: #0056b3;
 }
 
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2019/09/17/18/48/computer-4484282_1280.jpg'); /* Add your background image URL here */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+.fa-facebook {
+  background: #363f3a;
+  color: white;
+}
+.fa-instagram {
+  background: #353936;
+  color: white;
+}
+.fa-twitter {
+  background: #242d29;
+  color: white;
+}
 

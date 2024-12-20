@@ -157,7 +157,7 @@ input[type="password"] {
 }
  
 .login-btn {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     background-color: #6d776d;
     color: #fff;
@@ -185,3 +185,24 @@ input[type="password"] {
     background-attachment: fixed;
     z-index: -1;
 }
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 1px 1px;
+  }
+  .fa-facebook {
+    background: #363f3a;
+    color: white;
+  }
+  .fa-instagram {
+    background: #353936;
+    color: white;
+  }
+  .fa-twitter {
+    background: #242d29;
+    color: white;
+  }
+
+  

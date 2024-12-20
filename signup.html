@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,14 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <link rel="stylesheet" href="./css/signup.css">
+    <link rel="stylesheet" href="./css/main.css">
+
     <script src="./js/main.js"></script>
     <script src="./js/signup.js"></script>
 </head>
+
 <body>
     <header>
 
@@ -28,13 +32,16 @@
                 <li><a href="messages.html">Messages</a></li>
                 <li><a href="new.html">New Messages</a></li>
 
-            </div>
+                </div>
             </ul>
-            <div class="search-container">
-                <input type="text" placeholder="Search..." id="search-bar">
-                <button type="submit" id="searchButton">Search</button>
+            <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
             </div>
         </nav>
+        <div class="background"></div>
+
     </header>
     <div class="signup-wrapper">
         <main>
@@ -42,8 +49,8 @@
             <label><span>Full Name</span><input id="fullName"></label>
             <label><span>Password</span><input id="password" type="password"></label>
             <button id="signUpButton">Sign-Up</button>
-            <div id="output">?</div>
         </main>
     </div>
 </body>
+
 </html>
