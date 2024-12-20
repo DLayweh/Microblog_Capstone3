@@ -127,36 +127,20 @@ input {
 #signUpButton {
     width: 100%;
     padding: 10px;
-    background-color: #222822;
+    background-color: #6d776d;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
 }
  
 button:hover {
-    background-color: #388c38;
+    background-color: #151815;;
 }
  
-#output {
-    text-align: center;
-    color: red;
-    margin-top: 10px;
-    font-size: 14px;
-}
- 
-@media (max-width: 500px) {
-    main {
-        padding: 20px;
-    }
- 
-    input, button {
-        font-size: 14px;
-        padding: 8px;
-    }
-}
  
 .fa {
     padding: 5px;

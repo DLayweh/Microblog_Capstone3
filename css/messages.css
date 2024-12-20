@@ -39,11 +39,11 @@ button.dislike {
 }
 
 button.like:hover {
-  background-color: #0056b3;
+  background-color: #151815;;
 }
 
 button.dislike:hover {
-  background-color: green;
+  background-color: #151815;
 }
 
 
