@@ -160,7 +160,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Paragraph text style */
+
 p {
     font-size: 1.25rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -169,14 +169,14 @@ p {
     margin-bottom: 20px;
 }
 
-/* Adding some padding to the blog */
+
 .content {
-    color: black; /* Optional: Makes the text more readable */
-    padding: 20px;
+    color: black; 
+    padding: 60px;
     border-radius: 10px;
     
 }
-/* Blog container */
+
 .container {
     position: relative;
     max-width: 800px;
